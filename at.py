@@ -1,12 +1,9 @@
 import os
+import click
 
 import pandas as pd
 import numpy as np
 from sklearn.metrics import roc_curve, auc, precision_recall_curve, roc_auc_score, average_precision_score, ConfusionMatrixDisplay, confusion_matrix
-
-import click
-import polars as pl
-import rich
 
 from autogluon.tabular import TabularPredictor
 
