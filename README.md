@@ -6,7 +6,7 @@ This document provides instructions for training the `Auto-gluon` model, an ense
 To use the scripts, ensure the following dependencies are installed:
 
 ```bash
-pip install pandas numpy click autogluon
+pip install pandas numpy click sklearn polars rich autogluon
 ```
 
 
@@ -15,7 +15,7 @@ pip install pandas numpy click autogluon
 1. Place your raw methylation data in the expected MQ format.
 2. Run the command below for model training and test set prediction.
 ```bash
-python at.py --train <path_to_training_data> --test <path_to_test_data> --usem <bool> --output <path_to_output_directory>
+python at.py --train <path_to_training_data> --validation <path_to_validation_data> --test <path_to_test_data> --target <target_label> --background <background_label> --usem <bool> --output <path_to_output_directory>
 ```
 This step will encode the sequence to onehot format automatically and run the autogluon.
 
