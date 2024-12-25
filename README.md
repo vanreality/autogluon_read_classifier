@@ -6,7 +6,7 @@ This document provides instructions for training the `Auto-gluon` model, an ense
 To use the scripts, ensure the following dependencies are installed:
 
 ```bash
-pip install pandas numpy click sklearn autogluon
+pip install pandas numpy click scikit-learn autogluon
 ```
 
 
